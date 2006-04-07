@@ -1,12 +1,12 @@
 Summary:	Analog clock displaying the system-time
 Summary(pl):	Zegar analogowy wy¶wietlaj±cy czas systemowy
 Name:		cairo-clock
-Version:	0.3.1
+Version:	0.3.2
 Release:	1
 License:	GPL
 Group:		X11/Amusements
 Source0:	http://macslow.thepimp.net/projects/cairo-clock/%{name}-%{version}.tar.bz2
-# Source0-md5:	5d7e7667994505ab3e112614ed183bad
+# Source0-md5:	6af19fc0df603f92e4f99c3bb5fb78cb
 URL:		http://macslow.thepimp.net/?page_id=23
 BuildRequires:	cairo-devel >= 1.0.0
 BuildRequires:	gtk+2-devel >= 2:2.8.0
