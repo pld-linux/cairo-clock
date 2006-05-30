@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Amusements
 Source0:	http://macslow.thepimp.net/projects/cairo-clock/%{name}-%{version}.tar.bz2
 # Source0-md5:	6af19fc0df603f92e4f99c3bb5fb78cb
+Patch0:		%{name}-glade.patch
 URL:		http://macslow.thepimp.net/?page_id=23
 BuildRequires:	cairo-devel >= 1.0.0
 BuildRequires:	gtk+2-devel >= 2:2.8.0
@@ -34,6 +35,7 @@ z zarz±dc± sk³adania (np. xcompmgr), gtk+ 2.8.x, cairo 1.0.2 i librsvg
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure
