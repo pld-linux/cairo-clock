@@ -1,0 +1,11 @@
+--- cairo-clock-0.3.2/glade/cairo-clock.glade.orig	2006-05-30 19:46:01.276962750 +0200
++++ cairo-clock-0.3.2/glade/cairo-clock.glade	2006-05-30 19:57:55.489598250 +0200
+@@ -931,7 +931,7 @@
+   <property name="decorated">False</property>
+   <property name="skip_taskbar_hint">False</property>
+   <property name="skip_pager_hint">False</property>
+-  <property name="type_hint">GDK_WINDOW_TYPE_HINT_NORMAL</property>
++  <property name="type_hint">GDK_WINDOW_TYPE_HINT_UTILITY</property>
+   <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
+   <property name="focus_on_map">True</property>
+   <property name="urgency_hint">False</property>
