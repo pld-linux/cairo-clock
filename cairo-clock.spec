@@ -1,5 +1,5 @@
 Summary:	Analog clock displaying the system-time
-Summary(pl):	Zegar analogowy wy¶wietlaj±cy czas systemowy
+Summary(pl.UTF-8):   Zegar analogowy wyÅ›wietlajÄ…cy czas systemowy
 Name:		cairo-clock
 Version:	0.3.2
 Release:	1
@@ -25,13 +25,13 @@ Xorg 6.9/7.0 in combination with a compositing-manager (e.g. like
 xcompmgr), gtk+ 2.8.x, cairo 1.0.2 and librsvg 2.13.93 to produce
 a time-display with pretty-pixels.
 
-%description -l pl
-To jest zegar analogowy wy¶wietlaj±cy czas systemowy. "I co z tego?" -
-mo¿na zapytaæ - "Jest ju¿ oko³o 1023493 takich programów!". Owszem,
-jest pewnie jeszcze wiêcej, ale ten jest trochê inny. Wykorzystuje
-nowe mo¿liwo¶ci wy¶wietlania oferowane przez Xorg 6.9/7.0 w po³±czeniu
-z zarz±dc± sk³adania (np. xcompmgr), gtk+ 2.8.x, cairo 1.0.2 i librsvg
-2.13.93 w celu stworzenia wy¶wietlacza z ³adnymi pikselami.
+%description -l pl.UTF-8
+To jest zegar analogowy wyÅ›wietlajÄ…cy czas systemowy. "I co z tego?" -
+moÅ¼na zapytaÄ‡ - "Jest juÅ¼ okoÅ‚o 1023493 takich programÃ³w!". Owszem,
+jest pewnie jeszcze wiÄ™cej, ale ten jest trochÄ™ inny. Wykorzystuje
+nowe moÅ¼liwoÅ›ci wyÅ›wietlania oferowane przez Xorg 6.9/7.0 w poÅ‚Ä…czeniu
+z zarzÄ…dcÄ… skÅ‚adania (np. xcompmgr), gtk+ 2.8.x, cairo 1.0.2 i librsvg
+2.13.93 w celu stworzenia wyÅ›wietlacza z Å‚adnymi pikselami.
 
 %prep
 %setup -q
