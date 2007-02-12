@@ -1,5 +1,5 @@
 Summary:	Analog clock displaying the system-time
-Summary(pl.UTF-8):   Zegar analogowy wyświetlający czas systemowy
+Summary(pl.UTF-8):	Zegar analogowy wyświetlający czas systemowy
 Name:		cairo-clock
 Version:	0.3.2
 Release:	1
