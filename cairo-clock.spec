@@ -1,12 +1,12 @@
 Summary:	Analog clock displaying the system-time
 Summary(pl.UTF-8):	Zegar analogowy wyświetlający czas systemowy
 Name:		cairo-clock
-Version:	0.3.2
+Version:	0.3.3
 Release:	1
 License:	GPL
 Group:		X11/Amusements
-Source0:	http://macslow.thepimp.net/projects/cairo-clock/%{name}-%{version}.tar.bz2
-# Source0-md5:	6af19fc0df603f92e4f99c3bb5fb78cb
+Source0:	http://macslow.thepimp.net/projects/cairo-clock/%{name}_%{version}-1.tar.gz
+# Source0-md5:	2517b92e8ceea3dbb7df5d6c24d3d215
 Patch0:		%{name}-glade.patch
 URL:		http://macslow.thepimp.net/?page_id=23
 BuildRequires:	cairo-devel >= 1.0.0
@@ -35,7 +35,7 @@ z zarządcą składania (np. xcompmgr), gtk+ 2.8.x, cairo 1.0.2 i librsvg
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 %configure
@@ -48,10 +48,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
