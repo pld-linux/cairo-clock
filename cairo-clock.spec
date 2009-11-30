@@ -10,11 +10,13 @@ Source0:	http://macslow.thepimp.net/projects/cairo-clock/%{name}_%{version}-1.ta
 Patch0:		%{name}-glade.patch
 URL:		http://macslow.thepimp.net/?page_id=23
 BuildRequires:	cairo-devel >= 1.2.0
+BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.10.0
 BuildRequires:	libglade2-devel >= 1:2.6.0
 BuildRequires:	librsvg-devel >= 1:2.14.0
 BuildRequires:	pango-devel >= 1:1.10.0
+BuildRequires:	perl-XML-Parser
 BuildRequires:	pkgconfig
 Requires:	cairo >= 1.2.0
 Requires:	glib2 >= 1:2.8.0
