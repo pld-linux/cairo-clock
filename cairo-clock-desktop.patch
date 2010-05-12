@@ -1,0 +1,16 @@
+--- cairo-clock-0.3.3/desktop/cairo-clock.desktop.in~	2007-08-20 06:22:45.000000000 +0200
++++ cairo-clock-0.3.3/desktop/cairo-clock.desktop.in	2010-05-12 13:16:04.429450587 +0200
+@@ -5,4 +5,4 @@
+ _Comment=a super fine analog clock
+ Exec=cairo-clock
+ Icon=cairo-clock
+-Categories=GNOME;Application;Utility;
++Categories=GNOME;Application;Utility;Clock;
+--- cairo-clock-0.3.3/desktop/cairo-clock.desktop~	2007-08-20 06:22:45.000000000 +0200
++++ cairo-clock-0.3.3/desktop/cairo-clock.desktop	2010-05-12 13:16:10.176450589 +0200
+@@ -37,4 +37,4 @@
+ Comment[zh_TW]=一個超好用的類比時鐘
+ Exec=cairo-clock
+ Icon=cairo-clock
+-Categories=GNOME;Application;Utility;
++Categories=GNOME;Application;Utility;Clock;
