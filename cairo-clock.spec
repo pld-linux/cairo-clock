@@ -11,7 +11,7 @@ Patch0:		%{name}-glade.patch
 Patch1:		%{name}-desktop.patch
 URL:		http://macslow.thepimp.net/?page_id=23
 BuildRequires:	cairo-devel >= 1.2.0
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.10.0
 BuildRequires:	libglade2-devel >= 1:2.6.0
