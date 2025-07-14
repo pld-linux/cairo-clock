@@ -47,7 +47,7 @@ z zarządcą składania (np. compiz), gtk+ 2.10.x, cairo 1.2.0 i librsvg
 %prep
 %setup -q
 #%patch0 -p1
-%patch1 -p1
+%patch -P1 -p1
 
 %build
 %configure
