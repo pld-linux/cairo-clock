@@ -1,14 +1,15 @@
 Summary:	Analog clock displaying the system-time
 Summary(pl.UTF-8):	Zegar analogowy wyświetlający czas systemowy
 Name:		cairo-clock
-Version:	0.3.3
-Release:	3
+Version:	0.3.4
+Release:	1
 License:	GPL
 Group:		X11/Amusements
-Source0:	http://macslow.thepimp.net/projects/cairo-clock/%{name}_%{version}-1.tar.gz
-# Source0-md5:	2517b92e8ceea3dbb7df5d6c24d3d215
+Source0:	https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/cairo-clock/0.3.4-2ubuntu2/%{name}_%{version}.orig.tar.gz
+# Source0-md5:	78e5b3aa3492aa6c182eaacae63a7c03
 Patch0:		%{name}-glade.patch
 Patch1:		%{name}-desktop.patch
+Patch2:		%{name}-ldflags.patch
 URL:		http://macslow.thepimp.net/?page_id=23
 BuildRequires:	cairo-devel >= 1.2.0
 BuildRequires:	gettext-tools
@@ -46,8 +47,9 @@ z zarządcą składania (np. compiz), gtk+ 2.10.x, cairo 1.2.0 i librsvg
 
 %prep
 %setup -q
-#%%patch0 -p1
+#%%patch -P0 -p1
 %patch -P1 -p1
+%patch -P2 -p1
 
 %build
 %configure

@@ -1,0 +1,37 @@
+Fix stray space in LDFLAGS that gcc rejects, and link against -lm
+(sinf used in cairo-clock.c, fails to resolve with --as-needed).
+--- cairo-clock-0.3.4/src/Makefile.am.orig
++++ cairo-clock-0.3.4/src/Makefile.am
+@@ -1,12 +1,13 @@
+ bin_PROGRAMS = cairo_clock
+ transform = s/_/-/g
+ 
+-cairo_clock_LDFLAGS = -Wl, --export-dynamic
++cairo_clock_LDFLAGS = -Wl,--export-dynamic
+ 
+ cairo_clock_LDADD =	\
+ 	$(GLIB_LIBS)	\
+ 	$(GTK_LIBS)	\
+-	$(GTK_DEP_LIBS)		 
++	$(GTK_DEP_LIBS)	\
++	-lm
+ 
+ cairo_clock_CFLAGS =			\
+ 	-I$(top_srcdir)			\
+--- cairo-clock-0.3.4/src/Makefile.in.orig
++++ cairo-clock-0.3.4/src/Makefile.in
+@@ -226,11 +226,12 @@
+ target_alias = @target_alias@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+-cairo_clock_LDFLAGS = -Wl, --export-dynamic
++cairo_clock_LDFLAGS = -Wl,--export-dynamic
+ cairo_clock_LDADD = \
+ 	$(GLIB_LIBS)	\
+ 	$(GTK_LIBS)	\
+-	$(GTK_DEP_LIBS)		 
++	$(GTK_DEP_LIBS)	\
++	-lm
+ 
+ cairo_clock_CFLAGS = \
+ 	-I$(top_srcdir)			\
